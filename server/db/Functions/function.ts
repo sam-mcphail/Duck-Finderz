@@ -15,3 +15,15 @@ function getDuck(): Promise<Duck[]> {
 }
 
 export { getDuck }
+
+function getUserCollection(auth0Id: string): Promise<string[]> {
+  return connection('Collections')
+    .where('auth0Id', auth0Id)
+    .pluck('duckId');
+}
+
+
+
+
+
+export {getUserCollection }

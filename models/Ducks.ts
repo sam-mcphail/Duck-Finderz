@@ -14,6 +14,6 @@ export interface User {
 export interface Collection {
   id: number
   duckId: number
-  userId: number
+  auth0Id: number
   timesCollected: number
 }
