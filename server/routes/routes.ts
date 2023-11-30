@@ -7,7 +7,7 @@ import { getUserCollection } from '../db/Functions/function'
 
 const router = express.Router()
 
-router.use(checkJwt)
+//router.use(checkJwt)
 
 router.get('/', async (req, res) => {
   try {
@@ -36,6 +36,4 @@ router.get('/collection', async (req: JwtRequest, res) => {
   }
 });
 
-router.post('/', checkJwt, async (req: JwtRequest, res) => {
-
-})
+export default router

@@ -5,4 +5,9 @@ async function getDuck() {
   return data.body
 }
 
-export { getDuck, getDuckByRarity }
+async function getUserCollection() {
+  const data = await request.get('/api/v1/routes/collection')
+  return data.body
+}
+
+export { getDuck, getUserCollection }
