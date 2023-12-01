@@ -22,8 +22,17 @@ function getUserCollection(auth0Id: string): Promise<string[]> {
     .pluck('duckId');
 }
 
-
-
-
-
 export {getUserCollection }
+
+
+
+function updateUserCollection(userId: string, duckId: number): Promise<void> {
+  return connection('Collections')
+    .update({ duckId })
+    .where('userId', userId)
+    .then(() => {});
+}
+
+export { updateUserCollection };
+
+

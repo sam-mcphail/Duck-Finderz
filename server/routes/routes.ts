@@ -1,7 +1,7 @@
 import express from 'express'
 import { getDuck} from '../db/Functions/function'
 import  checkJwt, { JwtRequest }  from './auth0'
-import { getUserCollection } from '../db/Functions/function'
+import { getUserCollection, updateUserCollection } from '../db/Functions/function'
 
 
 
@@ -36,4 +36,27 @@ router.get('/collection', async (req: JwtRequest, res) => {
   }
 });
 
-export default router
+router.post('/updateCollection', async (req: JwtRequest, res) => {
+  try {
+    console.log('Handling POST request:', req.body);
+
+    const duckId = parseInt(req.params.duckId, 10);
+    const auth0Id = req.auth?.sub;
+
+    console.log('Auth0 User ID:', auth0Id);
+
+    if (!auth0Id) {
+      return res.status(401).json({ error: 'Unauthorized' });
+    }
+
+    await updateUserCollection(auth0Id, duckId);
+
+    res.status(200).json({ message: 'Collection updated' });
+  } catch (error) {
+    console.error('Error updating user collection:', error);
+    res.status(500).json({ error: 'Internal Server Error' });
+  }
+});
+
+
+export default router;
