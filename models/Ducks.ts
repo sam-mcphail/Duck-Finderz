@@ -2,7 +2,9 @@ export interface Duck {
   id: number
   name: string
   image: string
+  creator: string
   rarity: number
+  backstory: string
 }
 
 export interface User {
