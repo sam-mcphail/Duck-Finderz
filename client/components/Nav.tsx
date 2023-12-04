@@ -13,20 +13,25 @@ import {
 import { FcHome } from 'react-icons/fc'
 import { Link } from 'react-router-dom'
 import { useUser } from '../hooks/preferences.ts'
-
+import { RedirectLoginOptions } from '@auth0/auth0-react'
+interface CustomRedirectLoginOptions extends RedirectLoginOptions {
+  redirect_uri: string
+}
 function Nav() {
   const { user, logout, loginWithRedirect } = useAuth0()
 
-  const { data: preferences } = useUser()
+  // const { data: preferences } = useUser()
   const handleSignOut = () => {
     logout()
   }
 
-  const handleSignIn = () => {
-    const url = `${window.location.origin}/register`
-    loginWithRedirect({
-      openUrl(url) {window.location.replace(url)},
-    })
+  const handleSignUp = () => {
+    console.log('sign in')
+    const redirectOptions: CustomRedirectLoginOptions = {
+      redirect_uri: `${window.location.origin}/register`,
+      // Add any other properties as needed
+    }
+    loginWithRedirect(redirectOptions)
   }
 
   return (
@@ -67,7 +72,7 @@ function Nav() {
               colorScheme="gray"
               fontSize="xs"
               color="black"
-              onClick={handleSignIn}
+              onClick={handleSignUp}
             >
               Sign in
             </Button>

@@ -3,6 +3,7 @@ import Nav from './Nav'
 import { IfAuthenticated, IfNotAuthenticated } from './Authenticated'
 import LoginPage from './LoginPage'
 import { Flex } from '@chakra-ui/react'
+import Register from './Register'
 
 function App() {
   // const navigate = useNavigate()
@@ -15,6 +16,7 @@ function App() {
       </IfNotAuthenticated>
       <div>
         <IfAuthenticated>
+          <Register />
           <Collection />
         </IfAuthenticated>
       </div>

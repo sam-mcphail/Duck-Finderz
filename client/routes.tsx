@@ -14,8 +14,8 @@ export const routes = createRoutesFromElements(
       <Route index element={<App />} />
       <Route path="/ducks/:id" element={<SingleDuck />} />
       <Route path="/ducks" element={<Ducks />} />
-      <Route path="register" element={<Register />} />
     </Route>
     <Route path="/login" element={<LoginPage />} />
+    <Route path="register" element={<Register />} />
   </>
 )
