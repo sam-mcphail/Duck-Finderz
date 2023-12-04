@@ -12,16 +12,21 @@ import {
 } from '@chakra-ui/react'
 import { FcHome } from 'react-icons/fc'
 import { Link } from 'react-router-dom'
+import { useUser } from '../hooks/preferences.ts'
 
 function Nav() {
   const { user, logout, loginWithRedirect } = useAuth0()
 
+  const { data: preferences } = useUser()
   const handleSignOut = () => {
     logout()
   }
 
   const handleSignIn = () => {
-    loginWithRedirect()
+    const url = `${window.location.origin}/register`
+    loginWithRedirect({
+      openUrl(url) {window.location.replace(url)},
+    })
   }
 
   return (
