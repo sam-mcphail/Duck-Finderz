@@ -14,8 +14,11 @@ export interface User {
 }
 
 export interface Collection {
-  id: number
+  username: string
   duckId: number
-  userId: number
   timesCollected: number
+  id: number
+  name: string
+  image: string
+  rarity: number
 }
