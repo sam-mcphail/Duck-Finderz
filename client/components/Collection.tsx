@@ -21,7 +21,6 @@ import { duckCollected } from '../../server/db/Functions/function'
 const UserCollection = () => {
   const { user } = useAuth0()
   const username = user?.nickname as string
-  console.log(user?.nickname)
 
   const {
     data: Ducks,
@@ -31,8 +30,6 @@ const UserCollection = () => {
     queryKey: ['Collection', username],
     queryFn: () => getCollectionByUserName(username),
   })
-
-  console.log(Ducks)
 
   if (isLoading) {
     return <p>Loading...</p>
