@@ -38,18 +38,18 @@ function Nav() {
         bg="#E4B990"
         marginBottom="30px"
       >
-        <Link to={'/'}>
+        <Link to={'/'} aria-label="home link">
           <Box margin="10px 10px 10px 10px" p="2">
             <FcHome size={50}></FcHome>
           </Box>
         </Link>
-        <Link to={'/ducks'}>
+        <Link to={'/ducks'} aria-label="ducks link">
           <Box margin="10px 10px 10px 10px" p="2">
             <GiDuck size={50}></GiDuck>
           </Box>
         </Link>
         <Spacer />
-        <Heading fontFamily="shadows into  light" fontWeight="bold">
+        <Heading as="h1" fontFamily="shadows into  light" fontWeight="bold">
           DUCK FINDERZ
         </Heading>
 
