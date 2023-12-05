@@ -12,7 +12,7 @@ export default function Ducks() {
   } = useQuery<Duck[]>({ queryKey: ['Ducks'], queryFn: () => getDuck() })
 
   if (!ducks || isLoading) {
-    return <p>Loading...</p>
+    return <p data-testid="loading">Loading...</p>
   }
 
   if (error) {

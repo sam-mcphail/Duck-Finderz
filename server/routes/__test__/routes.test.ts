@@ -1,7 +1,11 @@
 import { expect, it, vi, describe } from 'vitest'
 import request from 'supertest'
 import server from '../../server'
-import { getDuck, getDuckById } from '../../db/Functions/function'
+import {
+  getCollectionByUserName,
+  getDuck,
+  getDuckById,
+} from '../../db/Functions/function'
 
 vi.mock('../../db/Functions/function')
 
@@ -54,5 +58,27 @@ describe('/:id', () => {
     const res = await request(server).get('/api/v1/routes/1')
     expect(res.statusCode).toBe(500)
     expect(getDuckById).toHaveBeenCalled()
+  })
+})
+
+describe.todo('/user/:username', () => {
+  it('calls getCollectionByUsername', async () => {
+    vi.mocked(getCollectionByUserName).mockRejectedValue([
+      {
+        id: 1,
+        duck_id: 1,
+        username: 'duckhunter',
+        times_collected: 0,
+      },
+      {
+        id: 2,
+        duck_id: 2,
+        username: 'duckhunter',
+        times_collected: 0,
+      },
+    ])
+    const res = await request(server).get('/api/v1/routes/user/duckhunter')
+    expect(res.statusCode).toBe(200)
+    expect(getCollectionByUserName).toHaveBeenCalled()
   })
 })
