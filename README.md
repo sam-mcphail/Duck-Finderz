@@ -55,3 +55,5 @@ Browse the internet using Google Chrome.
 As you visit different websites, you'll notice ducks appearing on the screen.
 Click on the ducks to add them to your collection.
 Open the Duck Collector app to view your duck count and customize your collection.
+
+Creators - Tayne Bilyard
