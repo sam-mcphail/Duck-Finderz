@@ -60,5 +60,5 @@ Open the Duck Collector app to view your duck count and customize your collectio
 - [Sam McPhail](https://github.com/sam-mcphail)
 - [Mike Moores](https://github.com/mike-moores)
 - [Joana Nicolaas Ponder](https://github.com/joana-nicolaasponder)
-- Teancum Scotson
+- [Teancum Scotson](https://github.com/Teancum03)
 - [Tayne Bilyard](https://github.com/TayneB)
