@@ -10,9 +10,9 @@ Duck Counter: Keep track of the number of ducks you've collected.
 ### Prerequisites
 Google Chrome browser
 ### AND EITHER
-Public location: [Duck Collector Chrome Extension](https://github.com/TayneB/duck-collector-extension)  https://github.com/TayneB/duck-collector-extension installed - installation instructions are included there
+- Public location: [Duck Collector Chrome Extension](https://github.com/TayneB/duck-collector-extension)  https://github.com/TayneB/duck-collector-extension installed - installation instructions are included there
 ### OR
-Manaia Organisation: [Duck Collector Chrom Extension](https://github.com/manaia-2023/duck-collector-extension/blob/main/README.md) https://github.com/manaia-2023/duck-collector-extension/blob/main/README.md
+- Manaia Organisation: [Duck Collector Chrom Extension](https://github.com/manaia-2023/duck-collector-extension/blob/main/README.md) https://github.com/manaia-2023/duck-collector-extension/blob/main/README.md
 
 
 ## Installation
