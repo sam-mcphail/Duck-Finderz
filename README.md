@@ -57,8 +57,8 @@ Click on the ducks to add them to your collection.
 Open the Duck Collector app to view your duck count and customize your collection.
 
 ### Creators
-- Sam McPhail
-- Mike Moores
-- Joana Nicolaas Ponder
+- [Sam McPhail](https://github.com/sam-mcphail)
+- [Mike Moores](https://github.com/mike-moores)
+- [Joana Nicolaas Ponder](https://github.com/joana-nicolaasponder)
 - Teancum Scotson
 - [Tayne Bilyard](https://github.com/TayneB)
