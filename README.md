@@ -2,7 +2,7 @@
   
 ## Overview
 
-Deployed Website - [Duck Finderz](https://duck-finderz.pushed.nz/)
+### Deployed Website - [Duck Finderz](https://duck-finderz.pushed.nz/)
 <br><br> Duck Finderz is a fun and interactive app with a Chrome extension that allows users to collect ducks while browsing the internet. It adds a delightful and entertaining element to the browsing experience, making it engaging for users of all ages.
 
 Features
