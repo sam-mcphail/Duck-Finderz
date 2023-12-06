@@ -6,7 +6,7 @@ Features
 Duck Collection: Collect adorable ducks as you navigate through different websites.
 Duck Counter: Keep track of the number of ducks you've collected.
 
-##Getting Started
+## Getting Started
 ### Prerequisites
 Google Chrome browser
 ### EITHER
