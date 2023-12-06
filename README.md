@@ -61,4 +61,4 @@ Open the Duck Collector app to view your duck count and customize your collectio
 - Mike Moores
 - Joana Nicolaas Ponder
 - Teancum Scotson
-- Tayne Bilyard
+- [Tayne Bilyard](https://github.com/TayneB)
