@@ -58,7 +58,7 @@ Open the Duck Collector app to view your duck count and customize your collectio
 
 ### Creators
 - Sam McPhail
-- Mike
-- Joana
-- T
+- Mike Moores
+- Joana Nicolaas Ponder
+- Teancum Scotson
 - Tayne Bilyard
