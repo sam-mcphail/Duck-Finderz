@@ -6,8 +6,8 @@ Features
 Duck Collection: Collect adorable ducks as you navigate through different websites.
 Duck Counter: Keep track of the number of ducks you've collected.
 
-Getting Started
-Prerequisites
+##Getting Started
+### Prerequisites
 Google Chrome browser
 ### EITHER
 Public location: [Duck Collector Chrome Extension](https://github.com/TayneB/duck-collector-extension)  https://github.com/TayneB/duck-collector-extension installed - installation instructions are included there
